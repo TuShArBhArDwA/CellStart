@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CellStart | ChronoNAD+</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #f8fbfd;
+      color: #0057a6;  /* Body Text Color */
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: #002f5c; /* Header Color */
+      margin-top: 0;
+    }
+
+    h1 {
+      font-family: 'Cabin', sans-serif;
+      font-weight: 700; /* Bold */
+    }
+
+    h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; /* SemiBold */
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #0057a6;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #002f5c, #0057a6);
+      text-align: center;
+      padding: 90px 20px;
+      color: white;
+    }
+    .hero-logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin: 20px 0;
+      color: white; /* Override header color in hero */
+    }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+      color: #eaf4ff;
+    }
+    .hero-product {
+      max-width: 160px;
+      margin-top: 30px;
+    }
+    .cta-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      background-color: #ffba08;
+      color: #002f5c;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #ffd25e;
+    }
+
+    /* Section General */
+    .section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    /* Benefits Section */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .benefit-box {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      flex: 1 1 280px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .benefit-box h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #002f5c;
+    }
+
+    /* Science Section */
+    .science {
+      background-color: #e9f4fb;
+      border-radius: 12px;
+      padding: 50px 30px;
+      margin-top: 50px;
+    }
+    .science img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #002f5c;
+      color: white;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .benefits {
+        flex-direction: column;
+      }
+      .hero-product {
+        max-width: 120px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="Slide 4 Logo 2.png" alt="CellStart Logo" class="hero-logo">
+    <h1>ChronoNAD+: Unlock Your Cellular Energy</h1>
+    <p>As we age, NAD+ levels decline, impacting vitality at the cellular level. 
+    ChronoNAD+ is engineered to restore these levels—helping you feel vibrant, focused, and energized every day.</p>
+    <a href="#benefits" class="cta-btn">Discover The Formula</a>
+    <br>
+    <img src="Slide 4 Product.png" alt="ChronoNAD+ Bottle" class="hero-product">
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section" id="benefits">
+    <h2>Why Is NAD+ Your Cellular Fuel?</h2>
+    <div class="benefits">
+      <div class="benefit-box">
+        <h3>⚡ Energy Production</h3>
+        <p>NAD+ converts food into cellular energy, powering every cell in your body.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>🧬 DNA Repair</h3>
+        <p>Supports the body’s natural processes to repair DNA and maintain cellular health.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>🛡️ Cellular Defense</h3>
+        <p>Activates vital “longevity genes” that defend your body against stress and aging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science Section -->
+  <section class="section science">
+    <h2>The Science of Cellular Energy</h2>
+    <p>Research shows that NAD+ levels can decline by up to <b>65%</b> between the ages of 30 and 70. 
+    ChronoNAD+ restores NAD+ and enhances its function with Resveratrol—boosting NAD+ up to <b>1.7x higher</b> than using NAD+ alone.</p>
+    <img src="Slide 6 Infographic 2.png" alt="NAD+ Decline Graph">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 CellStart. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
