@@ -1,5 +1,8 @@
 # CellStart | ChronoNAD+ Landing Page
 
+<img width="1901" height="967" alt="image" src="https://github.com/user-attachments/assets/6e43cdc3-b8c2-43e2-8ef2-e9bef0e04086" />
+
+
 A responsive mockup landing page for **CellStart's ChronoNAD+** product, created as part of a front-end design assignment.  
 Built using **vanilla HTML + CSS**, with zero frameworks (no Bootstrap, no external JS).  
 
