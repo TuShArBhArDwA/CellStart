@@ -121,15 +121,55 @@
       margin-top: 20px;
     }
 
+    /* How It Works Section */
+    .how-it-works img {
+      max-width: 450px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .how-it-works .gif-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
     /* Footer */
     footer {
-      text-align: center;
-      background: #002f5c;
-      color: white;
-      padding: 25px 10px;
-      font-size: 0.9rem;
-      margin-top: 50px;
-    }
+  background: linear-gradient(90deg, #007acc, #00c6ff);
+  color: white;
+  padding: 20px 15px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers everything horizontally */
+  gap: 15px; /* spacing between logo and text */
+  flex-wrap: wrap; /* allows stacking on very small screens */
+  text-align: center;
+}
+
+.footer-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+footer a {
+  color: #ffeb3b; 
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #fff;
+}
 
     /* Responsive Adjustments */
     @media (max-width: 768px) {
@@ -142,6 +182,9 @@
       .hero-product {
         max-width: 120px;
       }
+      .how-it-works img {
+        max-width: 100%;
+      }
     }
 
   </style>
@@ -150,32 +193,18 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <img src="Slide 4 Logo 2.png" alt="CellStart Logo" class="hero-logo">
+    <img src="Assets/Slide 4 Logo 2.png" alt="CellStart Logo" class="hero-logo">
     <h1>ChronoNAD+: Unlock Your Cellular Energy</h1>
     <p>As we age, NAD+ levels decline, impacting vitality at the cellular level. 
     ChronoNAD+ is engineered to restore these levels—helping you feel vibrant, focused, and energized every day.</p>
+    <img src="Assets/Slide 4 Product.png" alt="ChronoNAD+ Bottle" class="hero-product"><br>
     <a href="#benefits" class="cta-btn">Discover The Formula</a>
-    <br>
-    <img src="Slide 4 Product.png" alt="ChronoNAD+ Bottle" class="hero-product">
   </section>
 
   <!-- Benefits Section -->
   <section class="section" id="benefits">
-    <h2>Why Is NAD+ Your Cellular Fuel?</h2>
-    <div class="benefits">
-      <div class="benefit-box">
-        <h3>⚡ Energy Production</h3>
-        <p>NAD+ converts food into cellular energy, powering every cell in your body.</p>
-      </div>
-      <div class="benefit-box">
-        <h3>🧬 DNA Repair</h3>
-        <p>Supports the body’s natural processes to repair DNA and maintain cellular health.</p>
-      </div>
-      <div class="benefit-box">
-        <h3>🛡️ Cellular Defense</h3>
-        <p>Activates vital “longevity genes” that defend your body against stress and aging.</p>
-      </div>
-    </div>
+    <!-- Infographic Under Benefits -->
+    <img src="Assets/Slide 7 Infographic 1.png" alt="NAD Benefits Infographic" style="max-width:100%; margin-top:40px; border-radius:10px;">
   </section>
 
   <!-- Science Section -->
@@ -183,13 +212,30 @@
     <h2>The Science of Cellular Energy</h2>
     <p>Research shows that NAD+ levels can decline by up to <b>65%</b> between the ages of 30 and 70. 
     ChronoNAD+ restores NAD+ and enhances its function with Resveratrol—boosting NAD+ up to <b>1.7x higher</b> than using NAD+ alone.</p>
-    <img src="Slide 6 Infographic 2.png" alt="NAD+ Decline Graph">
+    <img src="Assets/Slide 6 Infographic 2.png" alt="NAD+ Decline Graph">
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works">
+    <h2>How ChronoNAD+ Works</h2>
+    <p>ChronoNAD+ combines NAD+ with Resveratrol to activate “longevity genes,” boosting NAD+ function and enhancing cellular health & defense.</p>
+    <div class="gif-container">
+      <img src="Assets/Slide 8 Infographic 1.gif" alt="NAD+ Increase Infographic">
+      <img src="Assets/Slide 8 Infographic 2.gif" alt="How They Work Together Infographic">
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 CellStart. All Rights Reserved.</p>
-  </footer>
+  <div class="footer-container">
+    <img src="Assets/Slide 4 Logo 2.png" alt="CellStart Logo" class="footer-logo">
+    <p>Made with ❤️ by 
+      <a href="https://tushar-bhardwaj.vercel.app/" target="_blank" rel="noopener noreferrer">
+        Tushar Bhardwaj
+      </a>
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
